@@ -21,6 +21,9 @@ HAN Chen
 # Bridge Adapter
 
 In this mode, VM can access the network through the bridge created by a device driver on the host system. This driver can be considered as a virtual Ethernet switch. It gets data from and injects data into the physical network adapter. Therefore, VM has its own IP address and acts just like an individual device connecting directly to the network.
+
+[Bridged Networking](https://www.vmware.com/support/ws5/doc/ws_net_configurations_bridged.html)
+
 BI Yue
 
 # Internal

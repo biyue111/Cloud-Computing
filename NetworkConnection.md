@@ -9,7 +9,7 @@
 
 |               | Nat | Bridge Adapter | Internal | Host-only Adapter
 | ------------- | :-: | :------------: | :------: | :---------------:
-|VM to Host     |ok   |ok              |          |
+|VM to Host     |ok   |ok              |          |
 |Host to VM     |no   |ok              |          |
 |Between VMs    |no   |ok              |          |
 |VM to Internet |ok   |ok              |          |
@@ -19,7 +19,7 @@
 HAN Chen
 
 Network address translation (NAT) is a method of remapping one IP address, usually an intranet IP, into another by modifying network address information, to solve the problems of:
-1. Insufficient IP addresse in LAN(local area network).
+1. Insufficient IP address in LAN(local area network).
 2. Reassignment of IP address in case of public IP changed.
 3. Security reasons
 

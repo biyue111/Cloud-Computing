@@ -3,6 +3,16 @@
 
 [Markdown Guide](https://guides.github.com/features/mastering-markdown/)
 
+# Overview
+
+|               | Nat | Bridge Adapter | Internal | Host-only Adapter
+| ------------- | :-: | :------------: | :------: | :---------------:
+|VM to Host     |ok   |ok              |no        |ok
+|Host to VM     |no   |ok              |no        |ok
+|Between VMs    |no   |ok              |ok        |ok
+|VM to Internet |ok   |ok              |no        |no
+|Internet to VM |no   |ok              |no        |no
+
 # Nat
 HAN Chen
 

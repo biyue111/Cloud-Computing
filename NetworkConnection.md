@@ -9,14 +9,26 @@
 
 |               | Nat | Bridge Adapter | Internal | Host-only Adapter
 | ------------- | :-: | :------------: | :------: | :---------------:
-|VM to Host     |     |ok              |          |
-|Host to VM     |     |ok              |          |
-|Between VMs    |     |ok              |          |
-|VM to Internet |     |ok              |          |
-|Internet to VM |     |ok              |          |
+|VM to Host     |ok   |ok              |          |
+|Host to VM     |no   |ok              |          |
+|Between VMs    |no   |ok              |          |
+|VM to Internet |ok   |ok              |          |
+|Internet to VM |no   |ok              |          |
 
 # Nat
 HAN Chen
+
+Network address translation (NAT) is a method of remapping one IP address, usually an intranet IP, into another by modifying network address information, to solve the problems of:
+1. Insufficient IP addresse in LAN(local area network).
+2. Reassignment of IP address in case of public IP changed.
+3. Security reasons
+
+## Features
+
+Under NAT mode, the client behinds NAT router cannot be accessed by other servers, including the servers outside NAT with real public IP address and clients under the same NAT router. In another word, the NAT only provides the client a single-way to access to internet service.
+
+## Classification
+There are three types of NAT: Static NAT, Pooled NAT, and Network Address Port Translation (NAPT). Among these, NAPT is the most commonly used one. In VirtualBox, the NAT mode is also NAPT. It maps internal addresses to different ports of an IP address of an external network and adds a port number selected by the NAT device to this address. It can hide small or medium-sized networks behind a legitimate IP address.adds a port number selected by the NAT device to this address.
 
 # Bridge Adapter
 

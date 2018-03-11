@@ -9,11 +9,11 @@
 
 |               | Nat | Bridge Adapter | Internal | Host-only Adapter
 | ------------- | :-: | :------------: | :------: | :---------------:
-|VM to Host     |ok   |ok              |          |
-|Host to VM     |no   |ok              |          |
-|Between VMs    |no   |ok              |          |
-|VM to Internet |ok   |ok              |          |
-|Internet to VM |no   |ok              |          |
+|VM to Host     |ok   |ok              |          |ok
+|Host to VM     |no   |ok              |          |ok
+|Between VMs    |no   |ok              |          |ok
+|VM to Internet |ok   |ok              |          |no
+|Internet to VM |no   |ok              |          |no
 
 # Nat
 HAN Chen
@@ -50,3 +50,4 @@ HE Mingcheng
 
 # Host-only Adapter
 GAN Lu
+Host-only network creates a network which connects the virtual machine with the host computer. The host can communicate with the virtual machine in host-only mode while other hosts who aren't in this network don't use the same network segment as VM. By using a virtual Ethernet adapter which is visible to the host operating system, the virtual machine share the same isolated virtual network with the host computer. Addresses on this network are provided by the virtual box DHCP server. Without NAT, the virtual machine can’t connect with Internet. Besides, two VMs in the same network can connect with each other by using the same virtual network adapter. The isolated system created by host-only mode can improve the security. We can apply this mode for example in an internal conference. Only the persons who participate the conference can share the files.

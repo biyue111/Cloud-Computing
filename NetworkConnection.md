@@ -34,14 +34,14 @@ There are three types of NAT: Static NAT, Pooled NAT, and Network Address Port T
 
 In this mode, VM can access the network through the bridge created by a device driver on the host system. This driver, which is called "net filter" driver, can be considered as a virtual Ethernet switch. It gets data from and injects data into the physical network adapter. Each VM needs to have its own IP address which can be set manually or automatically with a DHCP server. Therefore, VM acts just like a device connecting directly to the network and can fully participate in the network. 
 
-One should in mind that if mutiple VMs are running at the same time, each of them needs to have a unique address. Depending on the host operating system and the hypervisor, there are some limitations when using wireless interfaces:
-* VitrualBox 
-  * On **Macintosh** hosts, only IPv4 and IPv6 is supported over AirPort. 
-  * On **Linux** hosts, only IPv4 and IPv6 is supported. 
+One should in mind that if multiple VMs are running at the same time, each of them needs to have a unique address. Depending on the host operating system and the hypervisor, there are some limitations when using wireless interfaces:
+* VirtualBox 
+  * On **Macintosh** hosts, only IPv4 and IPv6 are supported over AirPort. 
+  * On **Linux** hosts, only IPv4 and IPv6 are supported. 
   * On **Solaris** hosts, there is no support for using wireless interfaces.
 
 * VMware 
-  * Wireless network bridging is supported for **Windows** hosts.
+  * Wireless network bridging is supported by **Windows** hosts.
 
 BI Yue
 

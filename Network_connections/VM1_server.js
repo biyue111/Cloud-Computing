@@ -46,6 +46,6 @@ http.createServer(function (request, response) {
 
     // Send response "Hello World"
     response.end(body_data);
-}).listen(8889);
+}).listen(8888);
 
-console.log('Server running at port 8889/');
+console.log('VM1 Server running at port 8888/');

@@ -19,4 +19,4 @@ http.createServer(function (request, response) {
     response.end(data.toString());
 }).listen(8889);
 
-console.log('Server running at http://127.0.0.1:8889/');
+console.log('Server running at port 8889/');

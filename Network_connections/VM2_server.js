@@ -1,4 +1,4 @@
-//VM2 puts "Hello world" to port 8888
+//VM2 puts "Hello world" to port 8889
 
 var http = require('http');
 
@@ -17,6 +17,6 @@ http.createServer(function (request, response) {
 
     // Send response "Hello World"
     response.end(data.toString());
-}).listen(8888);
+}).listen(8889);
 
-console.log('Server running at http://127.0.0.1:8888/');
+console.log('Server running at http://127.0.0.1:8889/');

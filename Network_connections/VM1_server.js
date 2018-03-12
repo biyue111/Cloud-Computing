@@ -1,9 +1,12 @@
 var http = require('http');
+var VM_1_port = 8888
+var VM2_IP = '192.168.56.102'
+var VM_2_port = 8889
  
 // Request options
 var options = {
-   host: '192.168.56.102', //The address of VM2
-   port: '8889', // The port of VM2
+   host: VM2_IP, //The address of VM2
+   port: VM_2_port..toString(), // The port of VM2
    path: ''
 };
 
@@ -46,6 +49,6 @@ http.createServer(function (request, response) {
 
     // Send response "Hello World"
     response.end(body_data);
-}).listen(8888);
+}).listen(VM_1_port);
 
-console.log('VM1 Server running at port 8888/');
+console.log('VM1 Server running at port ' + VM_1_port.toString());

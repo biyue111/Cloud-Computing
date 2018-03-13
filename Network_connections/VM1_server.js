@@ -6,7 +6,7 @@ var VM_2_port = 8889
 // Request options
 var options = {
    host: VM2_IP, //The address of VM2
-   port: VM_2_port..toString(), // The port of VM2
+   port: VM_2_port.toString(), // The port of VM2
    path: ''
 };
 

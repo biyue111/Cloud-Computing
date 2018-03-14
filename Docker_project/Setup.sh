@@ -1,5 +1,5 @@
-docker image build -t vm2 ./VM1
-docker image build -t vm1 ./VM2
+docker image build -t vm2 ./VM2
+docker image build -t vm1 ./VM1
 
 docker network create --subnet=10.0.2.0/24 internal
 

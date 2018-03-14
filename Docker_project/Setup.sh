@@ -1,5 +1,7 @@
-docker image build -f ./VM2/Dockerfile -t VM2 .
-docker image build -f ./VM1/Dockerfile -t VM1 .
+docker image build -t vm2 ./VM1
+docker image build -t vm1 ./VM2
 
-docker container run -d -p 8888:8888 VM2
-docker container run -d VM1
+docker network create --subnet=192.168.56.0/8 internal
+
+docker container run -d --net=internal --ip 192.168.56.102 vm2
+docker container run -d --net=internal --ip 192.168.56.103 -p 8888:8888 vm1

@@ -1,3 +1,33 @@
+## Introduction
+Compose is a tool for defining and running multi-container Docker applications. By using a YAML file, we can configure our application's services. With a single command, we can create an dstart all the services from the configuration. Docker Compose can standalize the procedure of developpment. Giving a docker-compose.yml, we can get the same configuration. 
+
+Using Compose can be concluded into three steps:
+1. Define a Dockerfile. Dockerfile includes several commands and parameters. Based on a basic image, these commands create a new costomized image. With a Dockerfile, the app's environment can be reproduced anywhere.
+2. Define a docker-compose.yml. docker-compose.yml integrates the seperate containers all together. A docker-compose.yml should include three main part: version, services and networks.
+3. Run docker-compose up and Compose starts and runs entire app.
+
+
+The form of Compose command is defined as follows:
+> docker-compose [-f=<arg>...] [options] [COMMAND] [ARGS...]
+    
+There are four features of Compose that make it effective:
+* Multiple isolated environments on a single host
+
+Compose uses a single host to several isolated environments.
+
+* Preserve volume data when containers are created
+
+Compose preserve all the data when the volume is created. If it finds the container who has run before, it will copy the data from old container to new container so that the data won't lose.
+
+* Only recreate containers that have changed
+
+Compose only recreates the container who has changed its service. Because Compose caches the configuration. By re-using the existing containers, Compose becomes quicker.
+
+* Variables and moving a composition between environments
+
+Compose supports variables in the Compose file. These variables can be used to customize composition for different environments, or different users.
+
+
 ## Project 1
 In this part, we use Docker-Compose to run `Frontend` and `Backend` in which `Frontend` is used to show the text we need to show and `Backend` is used to read the `input.txt` which can be changed by users. while initializing the image of frontend, it will start to listen the port of the backend with a js file. At backend side, a js file named `backend_servers.js` can read the text in `input.txt`. Finally, we can see this input at `localhost:8888`.
 ```

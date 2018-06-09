@@ -35,6 +35,7 @@ networks:
 ```
 ### Result
 1. Run docker-compose file to create two containers: `docker-compose up`
+![](fb-1.png)
 2. Verify the system by visiting the page: `localhost:8888`
 3. Change the `input.txt` at the beckend and retest the system.
 

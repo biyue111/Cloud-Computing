@@ -124,3 +124,9 @@ volumes:
 2. Initialize the database of mysql: `mysql -h CT_MYSQL_IP -u root -p < db1_tbl1.sql`
 3. Verify the system: `curl localhost:8888`
 ![](12.png)
+
+### Update
+In order to initialize more simply while creating the container, we add a command of shell in the Dockerfile: 'CMD ["./mysql.sh"]'. We can see the command in figure. So the container can initialize mysql while being created.
+![](13.png)
+![](14.png)
+

@@ -37,7 +37,10 @@ networks:
 1. Run docker-compose file to create two containers: `docker-compose up`
 ![](fb-1.png)
 2. Verify the system by visiting the page: `localhost:8888`
+![](fb-2.png)
 3. Change the `input.txt` at the beckend and retest the system.
+![](fb-3.png)
+![](fb-4.png)
 
 ## Project 2
 

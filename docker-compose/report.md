@@ -120,5 +120,7 @@ volumes:
 
 ### Result
 1. Run docker-compose file to create two containers: `docker-compose up`
+![](11.png)
 2. Initialize the database of mysql: `mysql -h CT_MYSQL_IP -u root -p < db1_tbl1.sql`
 3. Verify the system: `curl localhost:8888`
+![](12.png)
